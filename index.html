@@ -4,7 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QRHTML</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <script src="index.js"></script>
+  <script src="qr_code.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+
 </head>
 
 <body>
@@ -12,7 +16,11 @@
     <span style="color:red">QR</span>-<span style="color:green">HTML</span>
   </h1>
   <textarea type="text" id="code"></textarea>
-  <button onclick="html_runner()">Go</button>
+  <button onclick="scan()">Scan</button>
+  <div class="section">
+    <div id="my-qr-reader">
+    </div>
+  <button onclick="html_runner()" id="go">Go</button>
 </body>
 
 </html>

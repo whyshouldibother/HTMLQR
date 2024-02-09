@@ -1,9 +1,26 @@
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 512px){
     body{
         background-color: black;
         text-align: center;
     }
-    code{
-        
+    #code{
+        width: 80%;
     }
+    #go{
+        position: fixed;
+        bottom:5%;
+        right:5%;
+        background-color: rgb(26, 50, 134);
+        border:none;
+        border-radius: 50%;
+        height: 7em;
+        width: 7em;
+        color:white;
+        font-family: Impact;
+        font-weight: bolder;
+        font-size: larger;
+    }
+}
+#my-qr-reader{
+    display: none;
 }
